@@ -2,39 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Campaign Manager Design System - Professional Analytics Theme */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core Brand Colors - Professional Blue & Analytics Theme */
+    --background: 220 26% 98%;
+    --foreground: 220 26% 12%;
+    
+    /* Primary Brand - Deep Professional Blue */
+    --primary: 217 91% 52%;
+    --primary-light: 217 91% 65%;
+    --primary-dark: 217 91% 42%;
+    --primary-glow: 217 91% 75%;
+    
+    /* Success & Performance Colors */
+    --success: 142 76% 36%;
+    --success-light: 142 76% 45%;
+    --warning: 38 92% 50%;
+    --warning-light: 38 92% 60%;
+    --danger: 0 84% 60%;
+    --danger-light: 0 84% 70%;
+    
+    /* Analytics Chart Colors */
+    --chart-1: 217 91% 52%;
+    --chart-2: 142 76% 36%;
+    --chart-3: 38 92% 50%;
+    --chart-4: 269 97% 62%;
+    --chart-5: 0 84% 60%;
+    --chart-6: 197 71% 52%;
+    
+    /* Gradients for Premium Feel */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 52%), hsl(217 91% 65%));
+    --gradient-success: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 45%));
+    --gradient-analytics: linear-gradient(135deg, hsl(217 91% 52%), hsl(269 97% 62%));
+    --gradient-dashboard: linear-gradient(180deg, hsl(220 26% 98%), hsl(220 20% 96%));
+    
+    /* Advanced Shadows for Depth */
+    --shadow-card: 0 4px 6px -1px hsl(220 26% 12% / 0.08), 0 2px 4px -1px hsl(220 26% 12% / 0.06);
+    --shadow-card-hover: 0 10px 15px -3px hsl(220 26% 12% / 0.1), 0 4px 6px -2px hsl(220 26% 12% / 0.05);
+    --shadow-premium: 0 20px 25px -5px hsl(217 91% 52% / 0.1), 0 10px 10px -5px hsl(217 91% 52% / 0.04);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+    /* Dashboard Specific */
+    --kpi-bg: 220 26% 99%;
+    --metric-positive: 142 76% 36%;
+    --metric-negative: 0 84% 60%;
+    --metric-neutral: 220 26% 60%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Shadcn Integration */
+    --card: 220 26% 99%;
+    --card-foreground: 220 26% 12%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 220 26% 99%;
+    --popover-foreground: 220 26% 12%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 217 91% 52%;
+    --primary-foreground: 220 26% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 220 20% 94%;
+    --secondary-foreground: 220 26% 12%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 220 20% 96%;
+    --muted-foreground: 220 26% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 220 20% 94%;
+    --accent-foreground: 220 26% 12%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 220 26% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 20% 88%;
+    --input: 220 20% 88%;
+    --ring: 217 91% 52%;
 
     --radius: 0.5rem;
 
